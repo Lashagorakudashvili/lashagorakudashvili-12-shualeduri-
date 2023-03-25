@@ -23,7 +23,7 @@ html,body {
 
     .logo-1 {
         position: fixed;
-            top: 5%;
+            top: 6.5%;
             left: 10%;
             transform: translateY(-50%);
     }
@@ -38,7 +38,7 @@ html,body {
 
 
 
-@media (width <=992px) {
+@media (width <=1024px) {
     .non-mobile {
        display:none;
     } 
