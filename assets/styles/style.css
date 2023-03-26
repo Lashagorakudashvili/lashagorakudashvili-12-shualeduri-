@@ -16,16 +16,10 @@ html,body {
 @media (width <=2560px) {
     
     html, body {
-        
+       
     }
     
-    .mobile {
-        display: none;
-    }
     
-    .non-mobile {
-        display: contents;
-    }
 
     .logo-1 {
         position: fixed;
@@ -42,13 +36,14 @@ html,body {
 
     .kb {
         position: fixed;
-        width: 300px;
+        width: 250px;
         height: 600px;
         left: 5%;
         top: 15%;
         background: #f4f4f4;
         box-shadow: 0px 1px 8px rgba(47, 46, 46, 0.31);
         border-radius: 24px;
+        white-space: nowrap;
     }
  
     .dropdown {
@@ -58,32 +53,47 @@ html,body {
     }
 
     .Property {
-        top: 16%;
-        left: 10%;
-        position: absolute;
+        margin-top: 15%;
+        left: -80%;
+        position: relative;
     }
 
     .Price-range {
-        top: 3%;
-        left: 10%;
+        left: 15%;
         position: relative;   
     }
 
-    .search {
+    .box {
+        white-space: nowrap;
+        margin-top: -18%;
+        margin-left: -16%;
+    }
+
+    /*.search-2 {
        display: grid;
        place-items: center;
        margin-top: -93% !important;
        margin-left: 220% !important;
-    }
+    }*/
 
+    /*.search-2 {
+        display: flex;
+        position: relative;
+    }*/
+    
     .building {
-        position: absolute;
-            max-width: 1183%;
-            width: 235%;
+       /*max-width: 100%;
+       margin-left: 200%;
+       width: 500%;
+       margin-top: -200%;*/
+       position: absolute;
+        max-width: 1183%;
+            width: 233%;
             max-height: 600%;
             height: 100%;
             background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.47) 100%), url(.jpg);
             border-radius: 24px;
+            
     }
 
     .find {
@@ -187,10 +197,10 @@ html,body {
             width: 17px;
             margin-top: 3px;
         }
-    
         
-    
-   
+        .input-wrapper {
+            display: none;
+        }
 
 }
 
@@ -198,7 +208,129 @@ html,body {
 
 
 @media (width <=1024px) {
-    .non-mobile {
+    
+        .nav-item {
+            display: none;
+        }
+    
+        .navbar-toggler {
+            display: none;
+        }
+
+        
+
+                .input-wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 15px;
+                    position: relative;
+                }
+        
+                .input {
+                    border-style: none;
+                    height: 50px;
+                    width: 50px;
+                    padding: 10px;
+                    outline: none;
+                    border-radius: 50%;
+                    transition: .5s ease-in-out;
+                    background-color: #d4d4d4;
+                    box-shadow: 0px 0px 3px #000000;
+                    padding-right: 40px;
+                    color: #ffffff;
+                }
+        
+                .input::placeholder,
+                .input {
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 17px;
+                }
+        
+                .input::placeholder {
+                    color: #000000;
+                }
+        
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    right: 0px;
+                    cursor: pointer;
+                    width: 50px;
+                    height: 50px;
+                    outline: none;
+                    border-style: none;
+                    border-radius: 50%;
+                    pointer-events: painted;
+                    background-color: transparent;
+                    transition: .2s linear;
+                }
+        
+                .icon:focus~.input,
+                .input:focus {
+                    box-shadow: none;
+                    width: 150px;
+                    border-radius: 0px;
+                    background-color: transparent;
+                    border-bottom: 3px solid #000000;
+                    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+                }
+    
+                                .search-2 {
+                                    display: grid;
+                                    place-items: center;
+                                    margin-top: -93% !important;
+                                    margin-left: 10% !important;
+                                }
+                
+                                .building {
+                                    position: absolute;
+                                    max-width: 1183%;
+                                    width: 105%;
+                                    max-height: 600%;
+                                    height: 100%;
+                                    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.47) 100%), url(.jpg);
+                                    border-radius: 24px;
+                                }
+                
+                                .find {
+                                    margin-top: -85%;
+                                    left: 128%;
+                                    position: relative;
+                                    white-space: nowrap;
+                                }
+                
+                                .buy {
+                                    margin-top: 5%;
+                                    left: 165%;
+                                    position: absolute;
+                                    white-space: nowrap;
+                                }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*.non-mobile {
        display:none !important;
     } 
     .mobile {
@@ -207,7 +339,6 @@ html,body {
 
     .navbar-nav.me-auto.mb-2.mb-lg-0 {
         display: none;
-    
     }
 
     .navbar-toggler {
@@ -229,8 +360,8 @@ html,body {
         .Price-range {
             display: none;
         }
-    
-        .search {
+
+        .search-2 {
             display: none;
         }
     
@@ -249,10 +380,12 @@ html,body {
         .box {
             display: none;
         }
-
+        
         .kb {
             display: none;
-        }
+        }*/
+
+
 
 
 
