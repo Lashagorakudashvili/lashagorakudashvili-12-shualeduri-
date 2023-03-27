@@ -95,6 +95,7 @@
         padding: 20px;
         max-width: 270px;
         transform: translate(25px, 15px);
+        border-radius: 15px;
     }
     
     .container {
