@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html,body {
-    
-}
-
 @font-face {
     font-family: "HelveticaNeue-Bold-ttf";
     src: url("assets/fonts/HelveticaNeue-Bold.ttf");
@@ -15,13 +11,186 @@ html,body {
 
 @media (width <=2560px) {
     
-    html, body {
-       
+    body {
+        overflow-x: hidden;
     }
     
+    nav {
+        height: 50px;
+    }
     
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    nav li {
+        padding: 0 20px;
+    }
+    
+    nav a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        font-size: 15px;
+    }
 
-    .logo-1 {
+    nav li:first-child {
+        margin-right: auto;
+    }
+        
+    nav li:last-child {
+        margin-left: auto;
+    }
+
+    .box {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        max-width: 300px;
+    }
+                
+    h2 {
+        margin-top: 0;
+    }
+                
+    h3 {
+        margin-top: 20px;
+    }
+                
+     select {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+                
+    .checkbox-group {
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+        font-size: 12px;
+        accent-color: green;
+    }
+                
+    .checkbox-group label {
+        margin-right: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+                
+    .checkbox-group input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    .box {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        max-width: 270px;
+        transform: translate(25px, 15px);
+    }
+    
+    .container {
+            position: relative;
+            margin-top: -568px;
+            text-align: center;
+            margin-left: 215px !important;
+        }
+    
+    .image {
+        max-width: 100%;
+        max-height: auto;
+        width: 780px;
+        min-width: 75%;
+        height: 583px;
+    }
+    
+    .content {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .title {
+        font-size: 4vw;
+        white-space: nowrap;
+        color: #000000;
+    }
+    
+    .text {
+        font-size: 2vw;
+        white-space: nowrap;
+        color: #000000;
+        margin-top: 10px;
+    }
+    
+    .search-bar {
+       
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        width: 200px;
+    }
+    
+    .search-bar input[type="text"] {
+        padding: 10px;
+        width: 200px;
+    }
+    
+       
+        
+        
+
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+ /*display: inline-block;
+        margin-top: 10px;*/
+
+
+ /*.search-bar button {
+            background-color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    
+        .fa-search {
+            color: #333;
+        }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*.logo-1 {
         position: fixed;
             top: 6.5%;
             left: 5%;
@@ -79,13 +248,13 @@ html,body {
     /*.search-2 {
         display: flex;
         position: relative;
-    }*/
+    }
     
     .building {
-       /*max-width: 100%;
+       max-width: 100%;
        margin-left: 200%;
        width: 500%;
-       margin-top: -200%;*/
+       margin-top: -200%;
        position: absolute;
         max-width: 1183%;
             width: 233%;
@@ -116,7 +285,7 @@ html,body {
             color: #8b8ba7;
         }
     
-        /* styling of whole input container */
+        styling of whole input container
         .form {
             --timing: 0.3s;
             --width-of-input: 200px;
@@ -137,7 +306,7 @@ html,body {
             background: var(--input-bg, #fff);
         }
     
-        /* styling of Input */
+        /* styling of Input *
         .input {
             font-size: 0.9rem;
             background-color: transparent;
@@ -148,7 +317,7 @@ html,body {
             border: none;
         }
     
-        /* styling of animated border */
+        /* styling of animated border *
         .form:before {
             content: "";
             position: absolute;
@@ -163,7 +332,7 @@ html,body {
             transition: transform var(--timing) ease;
         }
     
-        /* Hover on Input */
+        /* Hover on Input *
         .form:focus-within {
             border-radius: var(--after-border-radius);
         }
@@ -172,13 +341,13 @@ html,body {
             outline: none;
         }
     
-        /* here is code of animated border */
+        /* here is code of animated border *
         .form:focus-within:before {
             transform: scale(1);
         }
     
         /* styling of close button */
-        /* == you can click the close button to remove text == */
+        /* == you can click the close button to remove text == *
         .reset {
             border: none;
             background: none;
@@ -186,13 +355,13 @@ html,body {
             visibility: hidden;
         }
     
-        /* close button shown when typing */
+        /* close button shown when typing *
         input:not(:placeholder-shown)~.reset {
             opacity: 1;
             visibility: visible;
         }
     
-        /* sizing svg icons */
+        /* sizing svg icons *
         .form svg {
             width: 17px;
             margin-top: 3px;
