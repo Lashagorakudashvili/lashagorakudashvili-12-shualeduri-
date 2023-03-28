@@ -64,7 +64,7 @@
         margin-top: 20px;
     }
                 
-     select {
+    select {
         display: block;
         width: 100%;
         margin-bottom: 20px;
@@ -121,7 +121,7 @@
         text-align: center;
     }
     
-    .title {
+    .title-2 {
         font-size: 4vw;
         white-space: nowrap;
         color: #000000;
@@ -148,8 +148,13 @@
     
     
 
-        
-        
+    .Trending {
+        transform: translate(65px, 30px);
+        position: absolute;
+    }
+
+
+    
 
 }    
 
