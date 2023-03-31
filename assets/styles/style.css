@@ -9,12 +9,222 @@
     src: url("assets/fonts/HelveticaNeue-Bold.ttf");
 }
 
+.phone-head {
+    display: none;
+}
+
+.phone-pic {
+    display: none;
+}
+
 @media (width <=768px) {
+    .pc-nav {
+        display: none;
+    }
+   
+    .pc-phone {
+        display: none;
+    }
+   
+    .pc-box {
+        display: none;
+    }
+   
+    .pc-pic {
+        display: none;
+    }
+   
+    .pc-trend {
+        display: none;
+    }
+   
+   
     body {
         overflow-x: hidden;
     }
    
-    .nav-bar {
+    .pc-pics {
+        display: none;
+    }
+
+    .pc-footer {
+        display: none;
+    }
+
+    .phone-head {
+        display: block;
+    }
+
+
+.header-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo-4 {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.search-4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.search-icon-4 {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.search-icon-4 img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar-4 {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: transparent;
+    transition: width 0.3s ease-in-out;
+    z-index: -1;
+    text-align: right;
+    outline: none;
+}
+
+.search-4:focus-within .search-bar-4 {
+    width: 200px;
+    z-index: 1;
+    text-align: left;
+    right: auto;
+    left: -100px;
+    /* modified left value */
+    border-radius: 25px 0 0 25px;
+}
+
+.search-4:hover .search-bar-4 {
+    width: 200px;
+    z-index: 1;
+    text-align: left;
+    right: auto;
+    left: -100px;
+    /* modified left value */
+    border-radius: 25px 0 0 25px;
+}
+
+.search-4 .search-icon-4:hover+.search-bar-4 {
+    width: 200px;
+    z-index: 1;
+    text-align: left;
+    right: auto;
+    left: -100px;
+    /* modified left value */
+    border-radius: 25px 0 0 25px;
+}
+
+.search-4 .search-bar-4:hover {
+    width: 200px;
+    z-index: 1;
+    text-align: left;
+    right: auto;
+    left: -100px;
+    /* modified left value */
+    border-radius: 25px 0 0 25px;
+}
+
+.search-4 .search-bar-4:focus {
+    width: 200px;
+    z-index: 1;
+    text-align: left;
+    right: auto;
+    left: -100px;
+    /* modified left value */
+    border-radius: 25px 0 0 25px;
+}
+
+.search-4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all 0.3s ease-in-out;
+    /* Added transition property */
+}
+
+.search-4:focus-within .search-bar-4,
+.search-4:hover .search-bar-4,
+.search-4 .search-icon-4:hover+.search-bar-4,
+.search-4 .search-bar-4:hover,
+.search-4 .search-bar-4:focus {
+    width: 120px;
+    z-index: 1;
+    text-align: left;
+    right: auto;
+    left: -100px;
+    /* increased value for extending search bar further left */
+    border-radius: 25px 0 0 25px;
+    border-bottom: 1px solid #000000;
+    margin-left: -85%;
+    border-radius: 0px;
+}
+
+/* Added this selector for closing the search bar */
+.search-4:not(:focus-within):not(:hover) .search-bar-4 {
+    width: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    /* Added transition property */
+}
+
+    .phone-pic {
+        display: block;
+    }
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*.nav-bar {
         display: none;
     }
 
@@ -153,7 +363,7 @@
             border-bottom: 3px solid #a8a8a8;
             -webkit-transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
             transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
-        }
+        }*/
        
         
 }
@@ -161,7 +371,18 @@
 
 
 @media (width <=2560px) {
-    .mobile-only {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*.mobile-only {
         display: none;
     }
     
@@ -172,7 +393,7 @@
 
     .input-wrapper {
         position: absolute;
-    }
+    }*/
 
     body {
         overflow-x: hidden;
