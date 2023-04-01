@@ -17,6 +17,14 @@
     display: none;
 }
 
+.phone-box {
+    display: none;
+}
+
+.phone-pics {
+    display: none;
+}
+
 @media (width <=768px) {
     .pc-nav {
         display: none;
@@ -196,13 +204,43 @@
         display: block;
     }
 
-                
+    .phone-box {
+        display: block;
+    }
 
-
-
-
-
-
+    .container-2 {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 10%;
+            position: relative;
+        }
+    
+        .line-2 {
+            margin-bottom: 10px;
+        }
+    
+        .dropdown-2 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    
+        .checkboxes-2 {
+            margin-bottom: 10px;
+        }
+    
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    
+       .container-2 {
+                padding: 10px;
+        }
+        
+        .phone-pics {
+            display: block;
+        }
 
 
 
